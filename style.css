@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Nabla&family=Space+Grotesk&display=swap');
+
+
+
+body {
+    font-size: 16px;
+    background: rgb(71,106,137);
+    background: linear-gradient(190deg, rgba(71,106,137,1) 24%, rgba(71,32,108,1) 49%, rgba(69,232,252,1) 80%);
+    width: 100vw;
+    height: 100vw;
+
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heading {
+    margin-top: 1vh;
+    display: flex;
+    justify-content: center;
+        
+    font-size: 150%;
+    font-family: 'Space Grotesk', sans-serif;
+    color: rgb(207, 21, 192);
+
+}
+
+.todo-container {
+    display:flex;
+    justify-content: center;
+}
+
+.list-group-item {
+    width: 50vw;
+}
+
+.button-container {
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+}
+
+.todo-input{
+    margin:  1vw;
+}
+
+
+.blur {
+    animation: inputBlur 2s;
+}
+
+@keyframes inputBlur {
+    25% {
+        filter: blur(2px);
+        -webkit-filter: blur(2px);
+    }
+    50% {
+        filter: blur(4px);
+        -webkit-filter: blur(4px);
+    }
+    75% {
+        filter: blur(6px);
+        -webkit-filter: blur(6px);
+    }
+    100% {
+        filter: blur(8px);
+        -webkit-filter: blur(8px);
+    }
+}
